@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Habib120-X | Official</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #0b1020;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.card {
+  width: 100%;
+  max-width: 360px;
+  padding: 35px 24px;
+  text-align: center;
+  background: #151d31;
+  border: 1px solid #303b56;
+  border-radius: 25px;
+}
+.logo {
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 25px;
+  background: linear-gradient(135deg,#7257ff,#258bff);
+  font-size: 25px;
+  font-weight: bold;
+}
+h1 { font-size: 27px; }
+.subtitle { color: #aeb8d0; font-size: 13px; }
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 14px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.channel { background: #7257ff; color: white; }
+.premium { background: #263450; color: #ffd166; }
+#contact {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background: #0b1020;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+#contact a { color: #22d3ee; }
+.footer { margin-top: 25px; color: #7f8ba3; font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">H120-X</div>
+  <h1>Habib120-X</h1>
+  <p class="subtitle">FUNNY POVs · SHORTS · ENTERTAINMENT</p>
+
+  <button class="channel" onclick="openChannel()">▶ View Channel</button>
+  <button class="premium" onclick="showContact()">✦ Premium for Link</button>
+
+  <div id="contact">
+    <h3>Premium Contact</h3>
+    <p>Contact me:</p>
+    <a href="mailto:habibbisshas123@gmail.com">habibbisshas123@gmail.com</a>
+    <button class="premium" onclick="hideContact()">Close</button>
+  </div>
+
+  <div class="footer">OFFICIAL CHANNEL PAGE<br><br>© Habib120-X</div>
+</div>
+
+<script>
+function openChannel() {
+  window.open("https://www.youtube.com/@Habib120-X", "_blank");
+}
+function showContact() {
+  document.getElementById("contact").style.display = "block";
+}
+function hideContact() {
+  document.getElementById("contact").style.display = "none";
+}
+</script>
+</body>
+</html>
